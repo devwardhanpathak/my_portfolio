@@ -1,0 +1,26 @@
+.main-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding:15px;
+ }
+.footer-icons{
+    float: right;
+}
+.material-icon{
+    transform: scale(1.6);
+    cursor: pointer;
+}
+.material-icon:hover{
+    transform: scale(1.9);
+}
+ li{
+    display: inline;
+    margin: 40px;
+    position: relative;
+    top: 6px;
+    filter: drop-shadow(5px 5px 5px #222);
+ }
