@@ -13,6 +13,7 @@
 .material-icon{
     transform: scale(1.6);
     cursor: pointer;
+    color:#d62828;
 }
 .material-icon:hover{
     transform: scale(1.9);

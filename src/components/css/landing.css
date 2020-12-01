@@ -1,15 +1,31 @@
-.header-main{
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap'); /*font-family: 'Syne Mono', monospace;*/
+
+.landing-main{
     position: absolute;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    color:#28302c;
-}
-.videobg{
-    position: fixed;
-    width: 100%;
     height: 100%;
+    /* background-color:#003049; */
     margin: 0px;
-    filter: blur(2px);
+    background: linear-gradient(45deg, rgba(214,40,40,1) 14%, rgba(0,48,73,1) 60%);
 }
-
+.text-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: auto;
+    text-align: center;
+    font-family: 'Syne Mono', monospace;
+    color: white;
+    letter-spacing: 7px;
+}
+.greet-tag{
+    font-size: 50px;
+}
+.name-tag{
+    font-size:80px ;
+}
+.what-tag{
+    font-size: 50px;
+}
