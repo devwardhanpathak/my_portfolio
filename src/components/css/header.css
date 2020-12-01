@@ -23,7 +23,7 @@
     float: right;
     margin: 0px;
 }
-li{
+.li-tag{
     display: inline;
     margin: 30px;
     position: relative;
@@ -38,4 +38,46 @@ li{
 .li-links:hover{
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width:420px){
+    .header-main{
+        background-color: black;
+    }
+    .l-text{
+        display: none;
+    }
+    .li-links{
+        font-size: 20px;
+    }
+    .li-tag{
+        margin: 12px;
+        top:1px;
+    }
+    .nav-links{
+        padding-left: 0px;
+        float: none;
+        margin: 0px;
+    }
+}
+@media screen and (max-width:360px){
+    .header-main{
+        background-color: black;
+        text-align: center;
+    }
+    .l-text{
+        display: none;
+    }
+    .li-links{
+        font-size: 18px;
+    }
+    .li-tag{
+        margin: 10px;
+        top:1px;
+    }
+    .nav-links{
+        padding-left: 0px;
+        float: none;
+        margin: 0px;
+    }
 }

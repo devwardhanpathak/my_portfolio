@@ -18,10 +18,50 @@
 .material-icon:hover{
     transform: scale(1.9);
 }
- li{
+ .footer-li{
     display: inline;
     margin: 40px;
     position: relative;
     top: 6px;
     filter: drop-shadow(5px 5px 5px #222);
  }
+
+ @media screen and (max-width:420px){
+    .main-footer{
+        text-align: center;
+    }
+    .footer-icons{
+        float: none;
+        padding-left: 0px;
+    }
+    .material-icon{
+        transform: scale(1.4);
+    }
+    .footer-li{
+        display: inline;
+        margin: 30px;
+        position: relative;
+        top: 6px;
+        filter: drop-shadow(5px 5px 5px #222);
+     }
+ }
+ @media screen and (max-width:360px){
+    .main-footer{
+        text-align: center;
+    }
+    .footer-icons{
+        float: none;
+        padding-left: 0px;
+    }
+    .material-icon{
+        transform: scale(1.4);
+    }
+    .footer-li{
+        display: inline;
+        margin: 20px;
+        position: relative;
+        top: 6px;
+        filter: drop-shadow(5px 5px 5px #222);
+     }
+ }
+ 

@@ -13,8 +13,8 @@ const Landing = () => {
                     <h2 className="what-tag">Front-End Developer</h2>
                     <h3 className="tech-tag">JavaScript/CSS/React</h3>
                 </div>
+                <Footer />
             </div>
-            <Footer />
         </>
     );
 };

@@ -9,9 +9,9 @@ const Header = () => {
                 <div className="header-container">
                     <span className="l-text">Devwardhan</span>
                     <ul className="nav-links">
-                        <li><Link className="li-links" to="/" >About Me</Link></li>
-                        <li><Link className="li-links" to="/" >My Work</Link></li>
-                        <li><Link className="li-links" to="/" >Contact Me</Link></li>
+                        <li className="li-tag"><Link className="li-links" to="/" >About Me</Link></li>
+                        <li className="li-tag"><Link className="li-links" to="/" >My Work</Link></li>
+                        <li className="li-tag"><Link className="li-links" to="/" >Contact Me</Link></li>
                     </ul>
                 </div>
             </div>

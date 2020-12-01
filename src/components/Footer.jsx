@@ -10,10 +10,10 @@ const Footer = () => {
         <>
             <div className="main-footer">
                 <ul className="footer-icons">
-                    <li><GitHubIcon className="material-icon" /></li>
-                    <li><LinkedInIcon className="material-icon" /></li>
-                    <li><TwitterIcon className="material-icon" /></li>
-                    <li><MailIcon className="material-icon" /></li>
+                    <li className="footer-li"><GitHubIcon className="material-icon" /></li>
+                    <li className="footer-li"><LinkedInIcon className="material-icon" /></li>
+                    <li className="footer-li"><TwitterIcon className="material-icon" /></li>
+                    <li className="footer-li"><MailIcon className="material-icon" /></li>
                 </ul>
             </div>
         </>
