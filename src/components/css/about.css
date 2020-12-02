@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+/*   font-family: 'Hind Madurai', sans-serif;   */
+.about-main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #003049;
+}
+.about-text{
+    position: absolute;
+    width: 75%;
+    height: 50%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 25px;
+}
+.about-text:hover{
+    border-radius:45px;
+    box-shadow:  15px 15px 30px #000f18, 
+                 -15px -15px 30px #043f5c
+}
+.about-heading{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Hind Madurai', sans-serif;
+}
+.about-para{
+    margin: 25px;
+    font-size: 25px ;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width:420px){
+    .about-text{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 15px;
+    }  
+    .about-heading{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Hind Madurai', sans-serif;
+    }
+    .about-para{
+        margin: 10px;
+        font-size: 20px ;
+        text-align: justify;
+        letter-spacing: 0px;
+    } 
+}
+
+@media screen and (max-width:360px){
+    .about-text{
+        width: 100%;
+        height: 50%;
+    }  
+    .about-heading{
+        font-size: 30px;
+    }
+    .about-para{
+        margin: 10px;
+        font-size: 17px;
+        letter-spacing: 0px;
+    } 
+}
+@media screen and (max-width:320px){
+    .about-text{
+        width: 100%;
+        height: 40%;
+    }
+    .about-heading{
+        font-size: 25px;
+    }
+    .about-para{
+        margin: 5px;
+        font-size: 15px;
+        letter-spacing: 0px;
+    } 
+}

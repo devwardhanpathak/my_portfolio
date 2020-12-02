@@ -7,9 +7,6 @@
     height: auto;
     padding: 10px;
 }
-.header-container{
-    color: #d62828;
-}
 .l-text{
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
@@ -17,7 +14,12 @@
     text-transform: uppercase;
    position: relative;
    cursor: pointer;
+   color: #d62828;
    left:1%;
+}
+.l-text:hover{
+    text-decoration: none;
+    color: #d62828;
 }
 .nav-links{
     float: right;
@@ -79,5 +81,12 @@
         padding-left: 0px;
         float: none;
         margin: 0px;
+    }
+}
+@media screen and (max-width:320px){
+    .l-text{
+        display: none;
+    }.li-links{
+        font-size: 16px;
     }
 }

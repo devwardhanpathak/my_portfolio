@@ -22,8 +22,8 @@
 }
 .text-div:hover{
     border-radius:45px;
-    box-shadow:  15px 15px 30px #00263a, 
-                 -15px -15px 30px #003a58
+    box-shadow:  15px 15px 30px #000f18, 
+                 -15px -15px 30px #043f5c
 }
 .greet-tag{
     font-size: 50px;
