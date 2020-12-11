@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/footer.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -10,10 +11,26 @@ const Footer = () => {
         <>
             <div className="main-footer">
                 <ul className="footer-icons">
-                    <li className="footer-li"><GitHubIcon className="material-icon" /></li>
-                    <li className="footer-li"><LinkedInIcon className="material-icon" /></li>
-                    <li className="footer-li"><TwitterIcon className="material-icon" /></li>
-                    <li className="footer-li"><MailIcon className="material-icon" /></li>
+                    <li className="footer-li">
+                        <a href="https://github.com/devwardhanpathak" target="_blank">
+                            <GitHubIcon className="material-icon" />
+                        </a>
+                    </li>
+                    <li className="footer-li">
+                        <a href="https://www.linkedin.com/in/devwardhan-pathak-b680b1158/" target="_blank">
+                            <LinkedInIcon className="material-icon" />
+                        </a>
+                    </li>
+                    <li className="footer-li">
+                        <a href="https://twitter.com/DevwardhanP" target="_blank">
+                            <TwitterIcon className="material-icon" />
+                        </a>
+                    </li>
+                    <li className="footer-li">
+                        <Link to="/Contact">
+                            <MailIcon className="material-icon" />
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </>

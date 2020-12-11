@@ -26,10 +26,6 @@
     /* background-color: white; */
     padding: 15px;
 }
-.label-tag{
-    display: block;
-    float: left;
-}
 .input-tag{
     border: 0;
     outline: 0;
@@ -40,12 +36,16 @@
     transition: all 0.2s ease-in-out;
     appearance: none;
     padding: 15px;
-    caret-color: #feeeee;
+    caret-color: #f77f00;
     color:#feeeee;
     font-size: 25px;
+    font-weight: bold;
     margin-bottom: 30px;
     box-shadow:  inset 2px 2px 5px #000f18,
             inset -5px -5px 10px #043f5c;
+}
+.text-area-tag{
+    resize:none;
 }
 
 .btn-class{
@@ -66,6 +66,45 @@
   margin: 15px 0px 15px 0px;
 }
 .btn-class:hover{
-    box-shadow: -2px -2px 5px #043f5c
-    , 2px 2px 5px #000f18;
+    box-shadow: -2px -2px 5px #000f18
+    , 2px 2px 5px #043f5c;
+}
+
+@media screen and (max-width:360px){
+    .contact-heading{
+        color:#feeeee;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .contact-form-div{
+        width: 100%;
+    }
+    .contact-form-div{
+        padding:20px
+    }
+    .input-tag{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .btn-class{
+        font-size: 20px;
+        margin:15px 0px 0px 0px;
+    }
+    .text-area-tag{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:420px){
+    .contact-heading{
+        color:#feeeee;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .contact-form-div{
+        width: 100%;
+    }
+    .contact-form-div{
+        padding:15px
+    }
+    
 }

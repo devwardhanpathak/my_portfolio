@@ -1,0 +1,69 @@
+.my-work-main{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:#003049;
+    margin: 0px;
+    display: block;
+    font-family: 'Hind Madurai', sans-serif; 
+}
+.image-text{
+    color: rgb(255, 239, 239);
+    background: rgba( 0, 0, 0, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.0px );
+-webkit-backdrop-filter: blur( 5.0px );
+border-radius: 10px;
+}
+.image-text-p{
+    font-size: 25px;
+}
+.slider-title{
+    text-align: center;
+    position: relative;
+    top:12%;
+    font-size: 4vw;
+    color: white;
+}
+.carousel-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 50%;
+}
+@media screen and (max-width:420px){
+    .carousel-div{
+        width: 400px;
+        height:auto;
+    }
+    .slider-title{
+        font-size: 8vw;
+    }
+    .slide{
+        height: 350px;
+    }
+    .slider-image{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .carousel-div{
+        width: 350px;
+        height:auto;
+    }
+    .slider-title{
+        font-size: 10vw;
+    }
+   
+}
+
+@media screen and (max-width:360px){
+    .carousel-div{
+        width: 320px;
+        height:auto;
+    }
+}
