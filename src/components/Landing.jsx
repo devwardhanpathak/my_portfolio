@@ -2,10 +2,11 @@ import React from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import './css/landing.css';
+
 const Landing = () => {
     return (
         <>
-            <div class="landing-main">
+            <div className="landing-main">
                 <Header />
                 <div className="text-div">
                     <h2 className="greet-tag">Hi, I am</h2>

@@ -1,22 +1,47 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './css/about.css';
+import { TweenMax, Power3 } from 'gsap';
+
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
 const About = () => {
+    let aboutPage = useRef(null);
+    let aboutpara = useRef(null);
+    let aboutHead = useRef(null);
+    useEffect(() => {
+        TweenMax.to(
+            aboutPage,
+            1.6,
+            {
+                opacity: 1,
+                ease: Power3.easeIn
+            })
+        TweenMax.to(
+            aboutpara,
+            1.2,
+            {
+                y: 0,
+                ease: Power3.easeIn
+            })
+        TweenMax.to(
+            aboutHead,
+            1.2,
+            {
+                y: 0,
+                ease: Power3.easeIn
+            })
+    }, []);
     return (
         <>
             <div className="about-main">
                 <Header />
-                <div className="about-text">
-                    <h1 className="about-heading">About Me</h1>
-                    <p className="about-para">Aliquam erat volutpat. Aenean tincidunt eleifend rhoncus.
-                    Phasellus rutrum metus id sem venenatis, et dapibus erat semper. Curabitur dignissim,
-                    risus molestie egestas convallis, tortor quam rutrum leo, scelerisque auctor nibh urna et metus.
-                    Aliquam dignissim pellentesque placerat. Donec scelerisque tristique dolor,
-                    sit amet auctor dolor
-                    lobortis venenatis. Nam cursus, mi in bibendum sollicitudin,
-                     arcu ipsum vulputate dui, at commodo nisi magna ac urna.</p>
+                <div ref={el => { aboutPage = el }} className="about-text">
+                    <h1 ref={headel => { aboutHead = headel }} className="about-heading">About Me</h1>
+                    <p ref={parael => { aboutpara = parael }} className="about-para">Hi! My name is Devwardhan Pathak currently
+                    In final of engineering. I'm a Front-End developer and I create responsive User Interface.
+                    I can work on HTML, CSS, JavaScript and framework like React.
+                     I Love cooking, watching movies and explore new technologies.</p>
                 </div>
                 <Footer />
             </div>

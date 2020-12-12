@@ -47,7 +47,8 @@
         background-color: black;
     }
     .l-text{
-        display: none;
+        font-size: 25px;
+        left: 110px;
     }
     .li-links{
         font-size: 20px;
@@ -68,14 +69,15 @@
         text-align: center;
     }
     .l-text{
-        display: none;
+        font-size: 22px;
+        left: 0px;
     }
     .li-links{
         font-size: 18px;
     }
     .li-tag{
         margin: 10px;
-        top:1px;
+        top:2px;
     }
     .nav-links{
         padding-left: 0px;
@@ -85,7 +87,7 @@
 }
 @media screen and (max-width:320px){
     .l-text{
-        display: none;
+        font-size: 20px;
     }.li-links{
         font-size: 16px;
     }
