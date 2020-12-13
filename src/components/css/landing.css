@@ -13,12 +13,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 1000px;
+    width: 800px;
     height: auto;
     text-align: center;
     font-family: 'Syne Mono', monospace;
     color: white;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
 }
 .text-div:hover{
     border-radius:45px;
@@ -26,10 +26,10 @@
                  -15px -15px 30px #043f5c
 }
 .greet-tag{
-    font-size: 50px;
+    font-size: 40px;
 }
 .name-tag{
-    font-size:80px;
+    font-size:70px;
     overflow: hidden;
     margin: 0 auto;
     border-right: 4px solid #f77f00;
@@ -50,7 +50,7 @@
     50% { border-color: #f77f00; }
   }
 .what-tag{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media screen and (max-width:420px){
@@ -117,7 +117,7 @@
   }
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:375px){
   .text-div{
     width: 100%;
     height: auto;

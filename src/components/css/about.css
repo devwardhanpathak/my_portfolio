@@ -9,14 +9,14 @@
 .about-text{
     opacity: 0;
     position: absolute;
-    width: 75%;
-    height: 50%;
+    width: 70%;
+    height: 40%;
     color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    padding: 25px;
+    padding: 15px;
 }
 .about-text:hover{
     border-radius:45px;
@@ -24,14 +24,14 @@
                  -15px -15px 30px #043f5c
 }
 .about-heading{
-    font-size: 50px;
+    font-size: 45px;
     transform: translateY(-100px);
     font-weight: bold;
     font-family: 'Hind Madurai', sans-serif;
 }
 .about-para{
-    margin: 25px;
-    font-size: 25px ;
+    margin: 20px;
+    font-size: 22px ;
     text-align: justify;
     letter-spacing: 3px;
     transform: translateY(100px)

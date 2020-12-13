@@ -10,7 +10,7 @@
 .l-text{
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
    position: relative;
    cursor: pointer;
@@ -33,7 +33,7 @@
 }
 .li-links{
     color:#f77f00;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
 }
@@ -90,5 +90,16 @@
         font-size: 20px;
     }.li-links{
         font-size: 16px;
+    }
+    .li-tag{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .l-text{
+        font-size: 22px;
+    }.li-links{
+        font-size: 18px;
     }
 }

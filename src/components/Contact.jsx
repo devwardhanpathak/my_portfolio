@@ -1,11 +1,60 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import { TweenMax, Power0, Linear, TimelineMax } from 'gsap';
 import emailjs from 'emailjs-com';
 import './css/contact.css';
 
 
 const Contact = () => {
+    let heading = useRef(null);
+    let input1 = useRef(null);
+    let input2 = useRef(null);
+    let input3 = useRef(null);
+    let input4 = useRef(null);
+    useEffect(() => {
+        TweenMax.to(
+            heading,
+            .8,
+            {
+                opacity: 1,
+                ease: Linear.easeNone
+
+            })
+        TweenMax.to(
+            input1,
+            .8,
+            {
+                opacity: 1,
+                ease: Linear.easeNone
+
+            })
+        TweenMax.to(
+            input2,
+            .4,
+            {
+                opacity: 1,
+                delay: .6,
+                ease: Linear.easeNone
+            })
+        TweenMax.to(
+            input3,
+            .4,
+            {
+                opacity: 1,
+                delay: 1,
+                ease: Linear.easeNone
+            })
+        TweenMax.to(
+            input4,
+            .4,
+            {
+                opacity: 1,
+                delay: 1.4,
+                ease: Power0.easeIn
+            })
+
+    }, []);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -23,12 +72,12 @@ const Contact = () => {
             <div className="contact-main">
                 <Header />
                 <div className="contact-form-div">
-                    <h1 className="contact-heading">Contact Me</h1>
+                    <h1 ref={headingEl => { heading = headingEl }} className="contact-heading">Contact Me</h1>
                     <form onSubmit={sendEmail}>
-                        <input className="input-tag" name="name" required type="text" placeholder="Name"></input>
-                        <input className="input-tag" name="email" required type="email" placeholder="Email"></input>
-                        <textarea className="input-tag text-area-tag" name="message" required cols="30" rows="3" placeholder="Message"></textarea>
-                        <input className="btn-class" type="submit" value="Send"></input>
+                        <input ref={input1El => { input1 = input1El }} className="input-tag contact-animation" name="name" required type="text" placeholder="Name"></input>
+                        <input ref={input2El => { input2 = input2El }} className="input-tag contact-animation" name="email" required type="email" placeholder="Email"></input>
+                        <textarea ref={input3El => { input3 = input3El }} className="input-tag text-area-tag contact-animation" name="message" required cols="30" rows="3" placeholder="Message"></textarea>
+                        <input ref={input4El => { input4 = input4El }} className="btn-class contact-animation" type="submit" value="Send"></input>
                     </form>
                 </div>
                 <Footer />
