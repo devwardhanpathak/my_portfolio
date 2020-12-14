@@ -12,17 +12,17 @@ const Footer = () => {
             <div className="main-footer">
                 <ul className="footer-icons">
                     <li className="footer-li">
-                        <a href="https://github.com/devwardhanpathak" target="_blank">
+                        <a href="https://github.com/devwardhanpathak" rel="noreferrer" target="_blank">
                             <GitHubIcon className="material-icon" />
                         </a>
                     </li>
                     <li className="footer-li">
-                        <a href="https://www.linkedin.com/in/devwardhan-pathak-b680b1158/" target="_blank">
+                        <a href="https://www.linkedin.com/in/devwardhan-pathak-b680b1158/" rel="noreferrer" target="_blank">
                             <LinkedInIcon className="material-icon" />
                         </a>
                     </li>
                     <li className="footer-li">
-                        <a href="https://twitter.com/DevwardhanP" target="_blank">
+                        <a href="https://twitter.com/DevwardhanP" rel="noreferrer" target="_blank">
                             <TwitterIcon className="material-icon" />
                         </a>
                     </li>

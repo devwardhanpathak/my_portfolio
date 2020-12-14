@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
-import { TweenMax, Power0, Linear, TimelineMax } from 'gsap';
+import { TweenMax, Power0, Linear } from 'gsap';
 import emailjs from 'emailjs-com';
 import './css/contact.css';
 

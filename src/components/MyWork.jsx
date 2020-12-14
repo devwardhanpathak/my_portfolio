@@ -54,12 +54,12 @@ const MyWork = () => {
                 <div ref={el => { myWork = el }} className="carousel-div">
                     <Carousel>
                         <Carousel.Item>
-                            <img ref={imagel => { carouselimage = imagel }} className="project-image" src={MunimPic} />
+                            <img ref={imagel => { carouselimage = imagel }} className="project-image" alt="Project-ss" src={MunimPic} />
                             <span ref={detailsel => { carouseldetails = detailsel }} className="carousel-details">
                                 <h1 className="carousel-heading">Munim</h1>
                                 <h4 className="project-head-details">An online web based inventory managment system</h4>
                                 <p className="project-details">I developed User Interface</p>
-                                <a href="https://github.com/devwardhanpathak" target="_blank">
+                                <a href="https://github.com/devwardhanpathak" rel="noreferrer" target="_blank">
                                     <GitHubIcon className="material-icon-carousel" />
                                 </a>
                             </span>

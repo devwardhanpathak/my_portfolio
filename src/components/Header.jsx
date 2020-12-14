@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { TweenMax, Power3 } from 'gsap';
 import './css/header.css';
 
 const Header = () => {
