@@ -19,16 +19,16 @@ const About = () => {
             })
         TweenMax.to(
             aboutpara,
-            1.2,
+            1,
             {
-                y: 0,
+                x: 0,
                 ease: Power3.easeIn
             })
         TweenMax.to(
             aboutHead,
-            1.2,
+            1,
             {
-                y: 0,
+                x: 0,
                 ease: Power3.easeIn
             })
     }, []);

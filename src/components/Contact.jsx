@@ -15,7 +15,7 @@ const Contact = () => {
     useEffect(() => {
         TweenMax.to(
             heading,
-            .8,
+            .6,
             {
                 opacity: 1,
                 ease: Linear.easeNone
@@ -23,7 +23,7 @@ const Contact = () => {
             })
         TweenMax.to(
             input1,
-            .8,
+            .2,
             {
                 opacity: 1,
                 ease: Linear.easeNone
@@ -31,18 +31,18 @@ const Contact = () => {
             })
         TweenMax.to(
             input2,
-            .4,
+            .2,
             {
                 opacity: 1,
-                delay: .6,
+                delay: .2,
                 ease: Linear.easeNone
             })
         TweenMax.to(
             input3,
-            .4,
+            .3,
             {
                 opacity: 1,
-                delay: 1,
+                delay: .3,
                 ease: Linear.easeNone
             })
         TweenMax.to(
@@ -50,7 +50,7 @@ const Contact = () => {
             .4,
             {
                 opacity: 1,
-                delay: 1.4,
+                delay: .4,
                 ease: Power0.easeIn
             })
 
