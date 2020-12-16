@@ -24,16 +24,16 @@ function MyVerticallyCenteredModal(props) {
             centered>
             <Carousel>
                 <Carousel.Item>
-                    <img className="modal-pic" src={munim1} />
+                    <img className="modal-pic" alt="project-ss" src={munim1} />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="modal-pic" src={munim2} />
+                    <img className="modal-pic" alt="project-ss" src={munim2} />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="modal-pic" src={munim3} />
+                    <img className="modal-pic" alt="project-ss" src={munim3} />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="modal-pic" src={munim4} />
+                    <img className="modal-pic" alt="project-ss" src={munim4} />
                 </Carousel.Item>
             </Carousel>
             <Modal.Footer>
