@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import MyWork from './MyWork';
+import { TweenMax, Power3 } from 'gsap';
 import Carousel from 'react-bootstrap/Carousel';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Button from 'react-bootstrap/Button'
@@ -49,10 +49,33 @@ function MyVerticallyCenteredModal(props) {
 
 const MyWorkCard1 = () => {
     const [modalShow, setModalShow] = React.useState(false);
+
+    let carouseldetails = useRef(null);
+    let carouselimage = useRef(null);
+
+    useEffect(() => {
+        TweenMax.from(
+            carouseldetails,
+            1.6,
+            {
+                opacity: 0,
+                y: 250,
+                ease: Power3.easeIn
+            })
+        TweenMax.from(
+            carouselimage,
+            1.6,
+            {
+                opacity: 0,
+                y: -250,
+                ease: Power3.easeIn
+            })
+    }, []);
+
     return (
         <>
-            <img onClick={() => setModalShow(true)} className="project-image" alt="Project-ss" src={MunimPic} />
-            <span className="carousel-details">
+            <img ref={imagel => { carouselimage = imagel }} onClick={() => setModalShow(true)} className="project-image" alt="Project-ss" src={MunimPic} />
+            <span ref={detailsel => { carouseldetails = detailsel }} className="carousel-details">
                 <h1 className="carousel-heading">Munim</h1>
                 <h4 className="project-head-details">An online web based inventory managment system</h4>
                 <p className="project-details">I developed User Interface</p>
