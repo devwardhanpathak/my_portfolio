@@ -3,11 +3,51 @@ import Header from './Header.jsx';
 import Carousel from 'react-bootstrap/Carousel';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Footer from './Footer.jsx';
-import MunimPic from './image/login.PNG';
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal';
+import MunimPic from './image/munim/login.PNG';
+import munim1 from './image/munim/munim1.PNG';
+import munim2 from './image/munim/munim2.PNG';
+import munim3 from './image/munim/munim3.PNG';
+import munim4 from './image/munim/munim4.PNG';
 import { TweenMax, Power3 } from 'gsap';
 import './css/mywork.css';
 
+
+// bootstrap modal func
+function MyVerticallyCenteredModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered>
+            <Carousel>
+                <Carousel.Item>
+                    <img className="modal-pic" src={munim1} />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className="modal-pic" src={munim2} />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className="modal-pic" src={munim3} />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className="modal-pic" src={munim4} />
+                </Carousel.Item>
+            </Carousel>
+            <Modal.Footer>
+                <Button onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
+        </Modal >
+    );
+}
+
+
 const MyWork = () => {
+
+    const [modalShow, setModalShow] = React.useState(false);
+
     let myWork = useRef(null);
     let sliderTitle = useRef(null);
     let carouseldetails = useRef(null);
@@ -54,7 +94,7 @@ const MyWork = () => {
                 <div ref={el => { myWork = el }} className="carousel-div">
                     <Carousel>
                         <Carousel.Item>
-                            <img ref={imagel => { carouselimage = imagel }} className="project-image" alt="Project-ss" src={MunimPic} />
+                            <img ref={imagel => { carouselimage = imagel }} onClick={() => setModalShow(true)} className="project-image" alt="Project-ss" src={MunimPic} />
                             <span ref={detailsel => { carouseldetails = detailsel }} className="carousel-details">
                                 <h1 className="carousel-heading">Munim</h1>
                                 <h4 className="project-head-details">An online web based inventory managment system</h4>
@@ -62,6 +102,10 @@ const MyWork = () => {
                                 <a href="https://github.com/devwardhanpathak" rel="noreferrer" target="_blank">
                                     <GitHubIcon className="material-icon-carousel" />
                                 </a>
+                                <MyVerticallyCenteredModal
+                                    show={modalShow}
+                                    onHide={() => setModalShow(false)}
+                                />
                             </span>
                         </Carousel.Item>
                     </Carousel>

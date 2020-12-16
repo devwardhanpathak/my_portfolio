@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './css/about.css';
 import { TweenMax, Power3 } from 'gsap';
-
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
@@ -12,7 +11,7 @@ const About = () => {
     useEffect(() => {
         TweenMax.to(
             aboutPage,
-            1.6,
+            1,
             {
                 opacity: 1,
                 ease: Power3.easeIn
