@@ -38,8 +38,8 @@ const About = () => {
                 <div ref={el => { aboutPage = el }} className="about-text">
                     <h1 ref={headel => { aboutHead = headel }} className="about-heading">About Me</h1>
                     <p ref={parael => { aboutpara = parael }} className="about-para">Hi! My name is Devwardhan Pathak currently
-                    In final of engineering. I'm a Front-End developer and I create responsive User Interface.
-                    I can work on HTML, CSS, JavaScript and framework like React.
+                    In final year of engineering. I'm a Front-End developer and I create responsive User Interface.
+                    I can work on HTML, CSS, JavaScript, Bootstrap and React.
                      I Love cooking, watching movies and explore new technologies.</p>
                 </div>
                 <Footer />

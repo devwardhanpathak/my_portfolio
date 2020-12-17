@@ -1,12 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal';
 import './css/footer.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import MailIcon from '@material-ui/icons/Mail';
+import DetailsIcon from '@material-ui/icons/Details';
+
+// bootstrap modal func
+function MyVerticallyCenteredModal(props) {
+    return (
+        <div className="contact-details-modal">
+            <Modal
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered>
+                <div className="contact-modal-container">
+                    <h1 className="contact-modal-details">Email: devwardhanpathak@gmail.com</h1>
+                    <h1 className="contact-modal-details">Phone: +91-8964900938</h1>
+                </div>
+                <Modal.Footer>
+                    <Button onClick={props.onHide}>Close</Button>
+                </Modal.Footer>
+            </Modal >
+        </div>
+    );
+}
+
+
 
 const Footer = () => {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <>
             <div className="main-footer">
@@ -27,11 +52,13 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className="footer-li">
-                        <Link to="/Contact">
-                            <MailIcon className="material-icon" />
-                        </Link>
+                        <DetailsIcon onClick={() => setModalShow(true)} className="material-icon" />
                     </li>
                 </ul>
+                <MyVerticallyCenteredModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
             </div>
         </>
     );

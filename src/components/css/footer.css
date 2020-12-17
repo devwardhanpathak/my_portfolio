@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap'); /*font-family: 'Source Code Pro', monospace;*/
+
+
 .main-footer {
     position: fixed;
     left: 0;
@@ -25,10 +28,21 @@
     top: 6px;
     filter: drop-shadow(5px 5px 5px #222);
  }
+ .contact-modal-details{
+     color: white;
+     font-size: 200%;
+     margin: 5%;
+     font-family: 'Source Code Pro', monospace;
+     font-weight: bold;
+ }
 
  @media screen and (max-width:420px){
     .main-footer{
         text-align: center;
+    }
+    .contact-modal-details{
+        font-size: 140%;
+        margin: 4%;
     }
     .footer-icons{
         float: none;
@@ -53,6 +67,10 @@
         float: none;
         padding-left: 0px;
     }
+    .contact-modal-details{
+        font-size: 120%;
+        margin: 2%;
+    }
     .material-icon{
         transform: scale(1.4);
     }
@@ -64,4 +82,17 @@
         filter: drop-shadow(5px 5px 5px #222);
      }
  }
+
+ @media screen and (max-width:320px){
+    .contact-modal-details{
+        font-size: 110%;
+        margin: 2%;
+    }
+ }
  
+ @media screen and (max-width:375px){
+    .contact-modal-details{
+        font-size: 125%;
+        margin: 3%;
+    }
+ }
