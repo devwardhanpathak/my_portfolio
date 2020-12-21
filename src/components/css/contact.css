@@ -13,7 +13,6 @@
     color:#feeeee;
     margin-bottom: 20px;
     font-weight: bold;
-    opacity: 0;
 }
 .contact-form-div{
     position: absolute;
@@ -69,10 +68,6 @@
 .btn-class:hover{
     box-shadow: -2px -2px 5px #000f18
     , 2px 2px 5px #043f5c;
-}
-.contact-animation{
-    /* transform: translateX(150px); */
-    opacity: 0;
 }
 
 @media screen and (max-width:360px){

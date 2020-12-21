@@ -20,37 +20,18 @@
     color: white;
     letter-spacing: 6px;
 }
-.text-div:hover{
-    border-radius:45px;
-    box-shadow:  15px 15px 30px #000f18, 
-                 -15px -15px 30px #043f5c
-}
 .greet-tag{
     font-size: 40px;
 }
 .name-tag{
     font-size:70px;
-    overflow: hidden;
     margin: 0 auto;
-    border-right: 4px solid #f77f00;
-    white-space: nowrap;
-    animation: 
-      typing 4s steps(50, end),
-    blink-caret .50s step-end infinite;
 }
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #f77f00; }
-  }
 .what-tag{
     font-size: 40px;
+}
+.tech-tag{
+  display: inline;
 }
 
 @media screen and (max-width:420px){
