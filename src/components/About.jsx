@@ -11,7 +11,7 @@ const About = () => {
                 <Header />
                 <div className="about-text">
                     <h1 className="about-heading xyz-in" xyz="fade-100 up-75 duration-15">About Me</h1>
-                    <p className="about-para xyz-in" xyz="small-100 fade-100 duration-15 ease-in">
+                    <p className="about-para xyz-in" xyz="fade-100 ease-ease down-100 duration-15">
                         Hi! My name is Devwardhan Pathak currently
                         In final year of engineering. I'm a Front-End developer and I create responsive User Interface.
                         I can work on HTML, CSS, JavaScript, Bootstrap and React.

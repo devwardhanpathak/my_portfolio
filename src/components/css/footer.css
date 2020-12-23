@@ -2,8 +2,7 @@
 
 
 .main-footer {
-    position: fixed;
-    left: 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
@@ -85,14 +84,14 @@
 
  @media screen and (max-width:320px){
     .contact-modal-details{
-        font-size: 110%;
+        font-size: 0px;
         margin: 2%;
     }
  }
  
  @media screen and (max-width:375px){
     .contact-modal-details{
-        font-size: 125%;
+        font-size: 115%;
         margin: 3%;
     }
  }

@@ -2,7 +2,7 @@
 
 
 .contact-main{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color:#003049;
@@ -15,7 +15,7 @@
     font-weight: bold;
 }
 .contact-form-div{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
