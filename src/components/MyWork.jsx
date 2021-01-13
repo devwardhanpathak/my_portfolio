@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Header from './Header.jsx';
 import MyWorkCard1 from './MyWorkCard1.jsx';
+import MyWorkCard2 from './MyWorkCard2.jsx';
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer.jsx';
 import { TweenMax, Power3 } from 'gsap';
@@ -36,6 +37,9 @@ const MyWork = () => {
                     <Carousel>
                         <Carousel.Item>
                             <MyWorkCard1 />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <MyWorkCard2 />
                         </Carousel.Item>
                     </Carousel>
                 </div>
